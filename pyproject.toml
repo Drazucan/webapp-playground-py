@@ -8,6 +8,10 @@ version = "0.0.1-alpha"
 requires-python = ">= 3.8"
 license = {text = "Apache 2.0"}
 
+[tool.setuptools]
+packages = ["playapp"]
+py-modules = ["__init__"] # dash, not underscore
+
 dependencies = [
     "annotated-types>=0.7.0",
     "anyio>=4.8.0",
